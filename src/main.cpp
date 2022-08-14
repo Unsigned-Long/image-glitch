@@ -10,7 +10,7 @@ int main(int argc, char const *argv[]) {
   cv::Mat dst;
   cv::namedWindow("win", cv::WINDOW_FREERATIO);
   while (true) {
-    if (!solver.solve(img, dst, {&imgBlock})) {
+    if (!solver.solve(img, dst, {&rgb})) {
       continue;
     }
     cv::imshow("win", dst);
